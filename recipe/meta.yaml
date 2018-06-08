@@ -1,4 +1,4 @@
-{% set version = '1.4.1' %}
+{% set version = "1.4.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -13,7 +13,7 @@ source:
     - https://cran.r-project.org/src/contrib/RgoogleMaps_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/RgoogleMaps/RgoogleMaps_{{ version }}.tar.gz
 
-  sha256: 5831cac4affa5e6f1ee25ebf92ccfc164a9bf8b7ca4d711291824f42a1a5553b
+  sha256: b479996fcb72f067644a7ea7f00325e44e76efd202e84aaab022753c4a6d5584
 
 build:
   number: 0
