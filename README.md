@@ -3,7 +3,7 @@ About r-rgooglemaps
 
 Home: http://rgooglemaps.r-forge.r-project.org/QuickTutorial.html
 
-Package license: GPL
+Package license: GPL-3
 
 Feedstock license: BSD 3-Clause
 
