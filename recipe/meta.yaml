@@ -1,4 +1,4 @@
-{% set version = '1.4.4' %}
+{% set version = "1.4.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RgoogleMaps_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RgoogleMaps/RgoogleMaps_{{ version }}.tar.gz
-  sha256: bd809f6cfb260a402c3351de44c96f3f576d600d81c11e8928854ac298a27369
+  sha256: 47a718ecc26358bc2508ec458946be1ec6f420df377fd922bbeaa49218068ea9
 
 build:
   merge_build_host: True  # [win]
