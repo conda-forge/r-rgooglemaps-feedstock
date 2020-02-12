@@ -1,7 +1,7 @@
 About r-rgooglemaps
 ===================
 
-Home: http://rgooglemaps.r-forge.r-project.org/QuickTutorial.html
+Home: https://github.com/markusloecher/rgooglemaps/blob/master/rgooglemaps/www/QuickTutorial.html
 
 Package license: GPL-3
 
