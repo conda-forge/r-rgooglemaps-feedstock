@@ -1,4 +1,4 @@
-{% set version = "1.4.5.3" %}
+{% set version = '1.4.5.3' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -26,9 +26,11 @@ requirements:
   host:
     - r-base
     - r-png
+    - r-sp
   run:
     - r-base
     - r-png
+    - r-sp
 
 test:
   commands:
@@ -36,7 +38,7 @@ test:
     - "\"%R%\" -e \"library('RgoogleMaps')\""  # [win]
 
 about:
-  home: http://rgooglemaps.r-forge.r-project.org/QuickTutorial.html
+  home: https://github.com/markusloecher/rgooglemaps/blob/master/rgooglemaps/www/QuickTutorial.html
   license: GPL-3
   summary: 'Serves two purposes: (i) Provide a comfortable R interface to query the Google server
     for static maps, and (ii) Use the map as a background image to overlay plots within
@@ -53,21 +55,18 @@ extra:
 # Package: RgoogleMaps
 # Type: Package
 # Title: Overlays on Static Maps
-# Version: 1.4.4
-# Date: 2019-08-15
+# Version: 1.4.5.3
+# Date: 2020-02-12
 # Depends: R (>= 2.10)
-# Imports: graphics, stats, utils, grDevices, methods, png
-# Suggests: PBSmapping, maptools, sp, loa, RColorBrewer, leaflet
+# Imports: graphics, stats, utils, grDevices, methods, png,sp
+# Suggests: PBSmapping, maptools, loa, RColorBrewer, leaflet,jpeg, RCurl
 # Author: Markus Loecher
-# URL: http://rgooglemaps.r-forge.r-project.org/QuickTutorial.html
+# URL: https://github.com/markusloecher/rgooglemaps/blob/master/rgooglemaps/www/QuickTutorial.html
 # Maintainer: Markus Loecher <markus.loecher@gmail.com>
 # Description: Serves two purposes: (i) Provide a comfortable R interface to query the Google server for static maps, and (ii) Use the map as a background image to overlay plots within R. This requires proper coordinate scaling.
 # License: GPL
 # LazyLoad: yes
 # Repository: CRAN
-# Repository/R-Forge/Project: rgooglemaps
-# Repository/R-Forge/Revision: 20
-# Repository/R-Forge/DateTimeStamp: 2017-02-09 15:29:12
-# Date/Publication: 2019-08-20 12:40:05 UTC
 # NeedsCompilation: no
-# Packaged: 2019-08-20 11:25:59 UTC; loecherm
+# Packaged: 2020-02-12 13:11:09 UTC; loecherm
+# Date/Publication: 2020-02-12 14:30:09 UTC
