@@ -1,11 +1,11 @@
-About r-rgooglemaps
-===================
+About r-rgooglemaps-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rgooglemaps-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/markusloecher/rgooglemaps/blob/master/rgooglemaps/www/QuickTutorial.html
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rgooglemaps-feedstock/blob/main/LICENSE.txt)
 
 Summary: Serves two purposes: (i) Provide a comfortable R interface to query the Google server for static maps, and (ii) Use the map as a background image to overlay plots within R. This requires proper coordinate scaling.
 
