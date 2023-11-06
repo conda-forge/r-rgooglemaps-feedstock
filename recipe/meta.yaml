@@ -1,4 +1,4 @@
-{% set version = '1.4.5.3' %}
+{% set version = "1.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RgoogleMaps_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RgoogleMaps/RgoogleMaps_{{ version }}.tar.gz
-  sha256: d1d5ad8db841754af175d4104a05c5c31e5cc445be314a3ac70483c31798680b
+  sha256: 14fe6c37d935a1c5a9ac063c9c9c59a1e93c6f86907480792302f9a9452cf8a4
 
 build:
-  merge_build_host: True  # [win]
-  number: 3
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,9 +40,7 @@ test:
 about:
   home: https://github.com/markusloecher/rgooglemaps/blob/master/rgooglemaps/www/QuickTutorial.html
   license: GPL-2.0-or-later
-  summary: 'Serves two purposes: (i) Provide a comfortable R interface to query the Google server
-    for static maps, and (ii) Use the map as a background image to overlay plots within
-    R. This requires proper coordinate scaling.'
+  summary: 'Serves two purposes: (i) Provide a comfortable R interface to query the Google server for static maps, and (ii) Use the map as a background image to overlay plots within R. This requires proper coordinate scaling.'
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
